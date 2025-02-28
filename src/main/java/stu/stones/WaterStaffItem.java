@@ -27,8 +27,8 @@ public class WaterStaffItem extends Item {
 
         BlockPos frontOfPlayer = user.getBlockPos().offset(user.getHorizontalFacing(), 10);
 
-        // Spawn the lightning bolt.
-        LightningEntity lightningBolt = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
+        // Spawn the water.
+        LightningEntity waterblock = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
         lightningBolt.setPosition(frontOfPlayer.toCenterPos());
         world.spawnEntity(lightningBolt);
 
