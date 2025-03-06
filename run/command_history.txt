@@ -1,0 +1,17 @@
+/give @s stones:thunderstone
+/gamemode survival @s
+/gamemode creative @s
+/gamemode survival @s
+/gamemode creative @s
+/gamemode survival @s
+/gamemode survival
+/gamemode creative @s
+/gamemode survival @s
+/gamemode creative @s
+/gamemode survival @s
+/give @s stones:thunderstaff
+/give @s stones:windstaff
+/give @s stones:thunderstaff
+/
+/gamemode survival @s
+/give @s stones:thunderstaff
