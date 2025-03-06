@@ -1,9 +1,11 @@
 package stu.stones;
 
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -31,6 +33,11 @@ public class ThunderStaffItem extends Item {
         LightningEntity lightningBolt = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
         lightningBolt.setPosition(frontOfPlayer.toCenterPos());
         world.spawnEntity(lightningBolt);
+
+
+        ItemStack staff = user.getStackInHand(hand);
+        staff.damage(1, user, EquipmentSlot.MAINHAND);
+
 
         return ActionResult.SUCCESS;
     }
